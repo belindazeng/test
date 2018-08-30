@@ -1,0 +1,969 @@
+
+<!DOCTYPE html>
+<!-- THEME DEBUG --><!-- THEME HOOK: 'html' --><!-- FILE NAME SUGGESTIONS:
+   * html--node--15.html.twig
+   * html--node--%.html.twig
+   * html--node.html.twig
+   x html.html.twig
+--><!-- BEGIN OUTPUT from 'themes/custom/lenstheme/templates/layout/html.html.twig' --><html amp lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+<meta name="title" content="The Blue Veil | FAMSF AMP Sandbox">
+<link rel="canonical" href="http://lens.famsf.org/lenslet/blue-veil">
+<meta name="description" content="As the title makes clear, Tarbell's painting is not about his sitter. Rather, it is a painting of her veil, which has been caught by a breeze and flows around her face and shoulders in sheer folds and waves. Throughout his life and career, Tarbell was both praised and criticized for his single-minded commitment to beauty. In response to his critics, he said, &quot;Art should render the beauty of the thing seen.”">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <title>Conde</title>
+    <script type="application/ld+json">
+       {
+         "@context": "http://schema.org/",
+         "@type": "ARArtifact",
+         "anchor": {
+             "@type": "Person",
+             "name": "Ryan Gosling",
+             "birthDate": "1980-11-12",
+             "sameAs": "https://www.wikidata.org/wiki/Q193815"  
+           },
+         "asset": {
+           "@type": "WebPage",
+           "name": "My First Lenslet",
+           "description": "A Lenslet attached to the painting Fruit and Flowers.",
+           "image": "http://example.com/icon.png",
+           "url": "http://example.com/lenslet.html"
+         }
+       }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      /* ---------- Layout ----------- */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.amp-header__content,
+.amp-main__content,
+.amp-footer__content {
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.amp-main {
+  min-height: 300px;
+}
+
+.amp-main__content {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.layout-container {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.artist {
+  z-index: 9;
+  color: #fff;
+  font-size: 85%;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.artist div,
+.artist .date {
+  display: inline-block;
+  color: #fff;
+  font-size: 85%;
+}
+
+.nationality {
+  color: #8a8a8a;
+  margin-bottom: 1rem;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.artist .date p {
+  display: inline;
+}
+
+.artist-inner h2 {
+  margin: .5rem 0 .25rem;
+}
+
+.artist-inner h4 {
+  margin-top: .5em;
+}
+
+.artist-details {
+  margin-bottom: 2em;
+}
+
+.artist-detail-item {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.art-detail-item {
+  display: inline-block;
+  margin-left: 2em;
+  width: 43%;
+}
+
+.art-detail-item amp-img {
+  margin: 0 12px 8px 0;
+}
+
+.art-detail-item-inner {
+  display: inline-block;
+}
+
+.artist-label {
+  color: #7b4c3a;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.credit {
+  margin: .5em 2em 1.6em;
+  padding-bottom: .65em;
+  border-bottom: 1px solid #ddd;
+}
+
+.amp-img {
+  position: relative;
+}
+
+.image-wrapper amp-img::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+ }
+
+.curator-notes {
+  background: #fff;
+  position: relative;
+  width: 93%;
+  margin: -40px auto 0;
+  font-size: 85%;
+  padding: 2em 0 1em;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 1px 5px #ccc;
+  z-index: 9;
+}
+
+.curator-notes p {
+  margin: 0 2em 1.5rem;
+  text-align: left;
+  color: #7a7a7a;
+}
+
+.question {
+  margin: 0 1.7em 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.curator-notes h3 {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.curator-notes::after {
+  content: "";
+  margin: 0 auto -20px;
+  padding: .3em 0;
+  height: 2.3em;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 1px 5px #ccc;
+  display: block;
+  background: #fff;
+  text-align: center;
+  color: #4a4a4a;
+  background: #fff url(/themes/custom/lenstheme/images/arrow-down.png) center no-repeat;
+  background-size: 12px auto;
+  z-index: 999;
+}
+
+.curator-notes h3 {
+  margin-top: 10px;
+}
+
+.badges,
+.art-details,
+.about-the-artist,
+.views-element-container {
+  background: #fff;
+  position: relative;
+  width: 93%;
+  margin: 0 auto 20px;
+  font-size: 73%;
+  padding: 1em 0 ;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #ccc;
+}
+
+.art-details {
+  margin-top: 25px;
+}
+
+.badges-inner,
+.artist-inner,
+.view-about-the-artist {
+  margin: 0 2em 1em;
+}
+
+.badge {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.badge amp-img {
+  position: relative;
+  top: -40px;
+}
+
+.badge h2 {
+  position: relative;
+  top: 40px;
+  font-size: .9em;
+  line-height: 12px;
+}
+
+.badge h2 a {
+  color: #3a3a3a;
+}
+
+/* ------- Scrolling section -------*/
+
+.view-related-works ul {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 0;
+  margin: 0 -1.5rem 0 -1.5rem;
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+}
+
+.view-related-works header {
+  margin-left: 1.5rem;
+}
+
+.view-related-works h3 {
+  margin: .5em 0;
+}
+
+.view-related-works li {
+  display: inline-block;
+  background-color: #fff;
+  width: 250px;
+  border-radius: 5px;
+  margin: 1em .5em 1em .1em;
+  box-shadow: 0 1px 3px #ccc;
+  overflow: hidden;
+}
+
+.view-related-works li:first-child {
+  margin-left: 3rem;
+}
+
+.view-related-works ul::-webkit-scrollbar {
+  display: none;
+  color: #fff;
+}
+
+.view-related-works .views-field-title {
+  margin: 15px 0 0 15px;
+}
+
+.view-related-works .views-field-field-date {
+  margin: 0 0 15px 15px;
+  color: #8a8a8a;
+  font-size: 90%;
+}
+  
+.view-related-works .views-field-title a,
+.view-related-works .views-field-title a:visited {
+  color: #2a2a2a;
+  border-bottom: none;
+}
+  
+
+/* ---------- Typography ----------- */
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/themes/custom/lenstheme/fonts/GoogleSans-Regular.ttf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* --- Links --- */
+
+a,
+a.link {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover,
+a:active,
+a:focus,
+.link:hover,
+.link:active,
+.link:focus {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 a,
+h2 a {
+  border-bottom: none;
+}
+
+/* --- Headings --- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-a,
+.heading-b,
+.heading-c,
+.heading-d,
+.heading-e,
+.heading-f {
+  font-weight: inherit;
+  margin: 1rem 0 0.5rem;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.title-artist-container {
+  position: absolute;
+  top: .6rem;
+  z-index: 9;
+  padding: 0 2rem;
+}
+
+h1,
+.heading-a {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+h2,
+.heading-b {
+  font-size: 1rem;
+}
+
+h3,
+.heading-c {
+  font-size: 0.9375rem;
+}
+
+h4,
+.heading-d {
+  font-size: 0.825rem;
+}
+
+h5,
+h6,
+.heading-e,
+.heading-f {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h5,
+.heading-e {
+  font-size: 0.75rem;
+}
+
+h6,
+.heading-f {
+  font-size: 0.625rem;
+}
+
+/* --- Text --- */
+
+p {
+  margin: 0 0 1rem;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+blockquote {
+  background: #f7f7f7;
+  border-left: 1px solid #bbb; /* LTR */
+  font-style: italic;
+  margin: 1.3125rem 10px;
+  padding: 0.4375rem 10px;
+}
+
+[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 1px solid #bbb;
+}
+
+blockquote:before {
+  color: #bbb;
+  content: "\201C";
+  font-size: 2.625rem;
+  line-height: 0.1;
+  margin-right: 0.153125rem; /* LTR */
+  vertical-align: -0.30625rem;
+}
+
+[dir="rtl"] blockquote:before {
+  content: "\201D";
+  margin-left: 0.153125rem;
+  margin-right: 0;
+}
+
+blockquote:after {
+  color: #bbb;
+  content: "\201D";
+  font-size: 2.625rem;
+  line-height: 0.1;
+  vertical-align: -0.39375rem;
+}
+
+[dir="rtl"] blockquote:after {
+  content: "\201C";
+}
+
+blockquote > p:first-child {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0 0 0.21875rem 0.875rem; /* LTR */
+}
+
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+  padding: 0 0.875rem 0.21875rem 0;
+}
+
+ol ol,
+ul ul {
+  margin: 0;
+  padding: 0 0 0.21875rem 0.875rem; /* LTR */
+}
+
+[dir="rtl"] ol ol,
+[dir="rtl"] ul ul {
+  padding: 0 0.875rem 0.21875rem 0;
+}
+
+/* ---------- Colors ----------- */
+
+body {
+  background: #fff;
+  color: #2a2a2a;
+}
+
+.amp-header {
+}
+
+.amp-main {
+  background-color: #ffffff;
+}
+
+.amp-footer {
+  background: #fff;
+}
+
+a,
+.link {
+  color: #0071b3;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #018fe2;
+}
+
+a:active,
+.link:active {
+  color: #23aeff;
+}
+
+.amp-header,
+.amp-header a,
+.amp-header li a.is-active,
+.site-branding__text,
+.site-branding,
+.site-branding__text a,
+.site-branding a {
+  color: #fffeff;
+}
+
+/* ---------- Utility classes ----------- */
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---------- Header ----------- */
+
+.amp-header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.amp-header__content {
+}
+
+
+.amp-header a {
+  border-bottom: none;
+}
+
+.brand {
+  margin: 0.375rem auto 0.375rem;
+}
+
+.site-branding__logo {
+  display: inline-block;
+  margin-right: 0.875rem; /* LTR */
+  margin-bottom: 0.25rem;
+  width: 6rem;
+}
+
+[dir="rtl"] .site-branding__logo {
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+.site-branding__text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-branding__name {
+  font-size: 1.375rem;
+  color: #686868;
+  line-height: 1;
+}
+
+.site-branding__slogan {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8125rem;
+  margin-top: 7px;
+  word-spacing: 0.1em;
+  font-style: italic;
+}
+
+/* ---------- Footer ----------- */
+
+.amp-footer {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.amp-footer__content {
+  color: #c0c0c0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
+  padding: 2rem 1rem 2rem;
+}
+
+.amp-footer a,
+.amp-footer a.is-active {
+  color: #fcfcfc;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.amp-footer a:hover,
+.amp-footer a:focus {
+  color: #fefefe;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* ---------- Skip Link ----------- */
+
+.amp-skip-link {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 50;
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.94em;
+  line-height: 1.7em;
+  padding: 1px 10px 2px;
+  border-radius: 0 0 10px 10px;
+  border-bottom-width: 0;
+  outline: 0;
+}
+
+.amp-skip-link.visually-hidden.focusable:focus {
+  position: absolute;
+  color: #fff;
+}
+
+/* ---------- Messages ----------- */
+
+.messages__wrapper {
+  padding: 20px 0 5px 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 8px 0;
+}
+
+[dir="rtl"] .messages__wrapper {
+  padding: 20px 8px 5px 0;
+}
+
+.messages {
+  background: no-repeat 10px 17px;  /* LTR */
+  border: 1px solid;
+  border-width: 1px 1px 1px 0;  /* LTR */
+  border-radius: 2px;
+  padding: 15px 20px 15px 35px; /* LTR */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+[dir="rtl"] .messages {
+  border-width: 1px 0 1px 1px;
+  background-position: right 10px top 17px;
+  padding-left: 20px;
+  padding-right: 35px;
+  text-align: right;
+}
+.messages + .messages {
+  margin-top: 1.538em;
+}
+
+.messages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages__item + .messages__item {
+  margin-top: 0.769em;
+}
+
+/* See .color-success in Seven's colors.css */
+.messages--status {
+  color: #325e1c;
+  background-color: #f3faef;
+  border-color: #c9e1bd #c9e1bd #c9e1bd transparent;  /* LTR */
+  background-image: url(../../../../../../core/misc/icons/73b355/check.svg);
+  box-shadow: -8px 0 0 #77b259; /* LTR */
+}
+
+[dir="rtl"] .messages--status {
+  border-color: #c9e1bd transparent #c9e1bd #c9e1bd;
+  box-shadow: 8px 0 0 #77b259;
+  margin-left: 0;
+}
+
+/* See .color-warning in Seven's colors.css */
+.messages--warning {
+  background-color: #fdf8ed;
+  background-image: url(../../../../../../core/misc/icons/e29700/warning.svg);
+  border-color: #f4daa6 #f4daa6 #f4daa6 transparent;  /* LTR */
+  color: #734c00;
+  box-shadow: -8px 0 0 #e09600; /* LTR */
+}
+
+[dir="rtl"] .messages--warning {
+  border-color: #f4daa6 transparent #f4daa6 #f4daa6;
+  box-shadow: 8px 0 0 #e09600;
+}
+
+/* See .color-error in Seven's colors.css */
+.messages--error {
+  background-color: #fcf4f2;
+  color: #a51b00;
+  background-image: url(../../../../../../core/misc/icons/e32700/error.svg);
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;  /* LTR */
+  box-shadow: -8px 0 0 #e62600; /* LTR */
+}
+
+[dir="rtl"] .messages--error {
+  border-color: #f9c9bf transparent #f9c9bf #f9c9bf;
+  box-shadow: 8px 0 0 #e62600;
+}
+
+.messages--error p.error {
+  color: #a51b00;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" custom-element="amp-analytics" async></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'amp_skip_link' -->
+<!-- BEGIN OUTPUT from 'themes/custom/lenstheme/templates/navigation/amp-skip-link.html.twig' -->
+<a href="#main-content" class="visually-hidden focusable amp-skip-link">
+  Skip to main content
+</a>
+
+<!-- END OUTPUT from 'themes/custom/lenstheme/templates/navigation/amp-skip-link.html.twig' -->
+
+
+        
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--node--15.html.twig
+   * page--node--%.html.twig
+   * page--node.html.twig
+   x page.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/lenstheme/templates/layout/page.html.twig' -->
+
+<main role="main" class="amp-main">
+  <a id="main-content" tabindex="-1"></a>  <div class="amp-main__content">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/layout/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--lenstheme-content.html.twig
+   * block--system-main-block.html.twig
+   * block--system.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/block/block.html.twig' -->
+<div id="block-lenstheme-content">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--15--amp.html.twig
+   * node--15.html.twig
+   * node--lenslet--amp.html.twig
+   x node--lenslet.html.twig
+   * node--amp.html.twig
+   * node.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/lenstheme/templates/content/node--lenslet.html.twig' -->
+
+<article data-history-node-id="15" role="article">
+
+  
+    
+  
+  <div class="title-artist-container">
+    <h1>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--title--lenslet.html.twig
+   x field--node--title.html.twig
+   * field--node--lenslet.html.twig
+   * field--title.html.twig
+   * field--string.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field--node--title.html.twig' -->
+<span>Ryan Gosling</span>
+
+<!-- END OUTPUT from 'core/themes/stable/templates/field/field--node--title.html.twig' -->
+
+</h1>
+    <div class="artist">
+      Behind the scenes
+    </div>
+  </div>
+
+  
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   x field--node--field-image--lenslet.html.twig
+   * field--node--field-image.html.twig
+   * field--node--lenslet.html.twig
+   * field--field-image.html.twig
+   * field--image.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/lenstheme/templates/field/field--node--field-image--lenslet.html.twig' -->
+    <div class="image-wrapper">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_style' -->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/image-style.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/amptheme/amptheme/templates/field/image.html.twig' -->
+<amp-img layout="responsive" src="https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2016/12/ryan-goslings-hair-1170x600.jpg" width="1024" height="420" alt="Edmund Charles Tarbell, The Blue Veil, 1898"></amp-img>
+
+<!-- END OUTPUT from 'themes/contrib/amptheme/amptheme/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/themes/stable/templates/field/image-style.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/themes/stable/templates/field/image-formatter.html.twig' -->
+
+
+    </div>
+
+<!-- END OUTPUT from 'themes/custom/lenstheme/templates/field/field--node--field-image--lenslet.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field_group_html_element' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field-group-html-element--node--lenslet--group-description-content.html.twig
+   * field-group-html-element--node--lenslet--div.html.twig
+   * field-group-html-element--node--group-description-content.html.twig
+   * field-group-html-element--node--lenslet.html.twig
+   * field-group-html-element--node--div.html.twig
+   * field-group-html-element--group-description-content.html.twig
+   * field-group-html-element--lenslet.html.twig
+   * field-group-html-element--node.html.twig
+   * field-group-html-element--div.html.twig
+   x field-group-html-element.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/field_group/templates/field-group-html-element.html.twig' -->
+
+<div class="curator-notes">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--body--lenslet.html.twig
+   * field--node--body.html.twig
+   * field--node--lenslet.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
+
+            <div><p>PERSON - As the title makes clear, this is a test lenslet. Imagine all sorts of stimulating content here.”</p></div>
+      
+<!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+<!-- END OUTPUT from 'modules/contrib/field_group/templates/field-group-html-element.html.twig' -->
+
+</div>
+</article>
+</div>
+  </body>
+
+
+<!-- END OUTPUT from 'themes/custom/lenstheme/templates/layout/html.html.twig' -->
+
+</html>
